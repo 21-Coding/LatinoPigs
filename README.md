@@ -26,7 +26,7 @@ This application gives a brief showing of the power of JavaScript and HTML.
  1.  Open your terminal (mac users).
  2. PC users will need **Git for Windows**, here is the latest version.   **(**2.23.0**) **32-bit**** (https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/Git-2.23.0-32-bit.exe).
  3. Navigate to your desktop in your terminal using `cd desktop`.  If this command does not work please use `cd ~`, which will return you to your user account's home folder.  Once this is complete, repeat the command `cd desktop` followed by `git clone [repository link here]`.  It should look like this: ![enter image description
-    here](https://lh3.googleusercontent.com/S4CjnmthQkXNYUYngswooRvBCvOOdt0KjUTjSQOnJT4V1VrKJslfhAdqBHDHCet1mj87WXA4CAg=s1500).
+    here](https://lh3.googleusercontent.com/S4CjnmthQkXNYUYngswooRvBCvOOdt0KjUTjSQOnJT4V1VrKJslfhAdqBHDHCet1mj87WXA4CAg=s1500)
 
 
 ### Specifications
@@ -35,12 +35,10 @@ This application gives a brief showing of the power of JavaScript and HTML.
 |Behavior|Input  |Output|
 |-----------------------------|--------------------------|:--------------:|
 |The program does nothing to non-alphabetical characters  |3  |3  |
-|The program adds "ay" to single-letter words beginning with a vowel |i  |iay   |
-|For words with one or more consonants, the program will move all of the first consecutive consonants to the end, and add "ay".|Booth  |oothbay |
-|If the first consonants include "qu", move the "u" along with the "q". |2000  |true   |
-
-
-None.
+|The program adds "ay" to single-letter words beginning with a vowel |"i"  |"iay "  |
+|For words with one or more consonants, the program will move all of the first consecutive consonants to the end, and add "ay".|"booth"  |"oothbay" |
+|If the first consonants include "qu", move the "u" along with the "q". |"squeal"  |"uealsqay" |
+|For words beginning with "y" treat "y" as a consonant. |"your"  |"ouryay"  |
 
 ### Support and contact details
 

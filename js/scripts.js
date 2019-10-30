@@ -1,6 +1,6 @@
 //Business Logic
-const vowels = ['a', 'e', 'i', 'o', 'u'];
-const consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z'];
+const vowels = /^([^aeiouq])+/g;
+const consonants = /^([^bcdfghjklmnpqrstvxyz])+/g;
 const newArray = [];
 function pigLatin(sentenceArray, vowel, consonant, word){
   sentenceArray.forEach(function(vowel){
