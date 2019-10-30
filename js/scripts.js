@@ -1,5 +1,6 @@
 //Business Logic
 const vowels = /^([^aeiouq])+/g;
+// const vowels = ["a", "e", "i", "o","u"];
 const consonants = /^([^bcdfghjklmnpqrstvxyz])+/g;
 let newArray = [];
 // function pig(sentence, vowel, cons) {
@@ -25,11 +26,17 @@ function pig(sentence, vowel, cons) {
   console.log("1", sentence);
   sentence.forEach(function(word) {
     console.log("1.5", word);
-      if(word.includes(word.charAt(0))){
+    if(word.charAt(0).match(vowels)){
+      console.log("2", word);
+      console.log("Vowel: ", vowel);
+      transformedArray.push(word.charAt(0) + "way");
+      // word + way
+      console.log("3", word);
+    } else if(word.charAt(0).match(consonants)){
         transformedArray.push(word.slice(1) + (word.charAt(0) + "ay"));
-        console.log("2", sentence);
-        console.log("3", word);
-      }
+        console.log("4", sentence);
+        console.log("5", word);
+    }
     });
     console.log("4", sentence);
     console.log("5", transformedArray);
