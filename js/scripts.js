@@ -1,16 +1,21 @@
 //Business Logic
 const vowels = /^([^aeiouq])+/g;
 const consonants = /^([^bcdfghjklmnpqrstvxyz])+/g;
-const newArray = [];
+let newArray = [];
 function pig(sentence, vowel, cons) {
   let transformedArray = [];
+  console.log(sentence);
   sentence.forEach(function(word) {
-    if (vowel.includes(word.charAt(0))) {
+    console.log(word.charAt(0));
+    if (sentence.includes(word.charAt(0))) {
       transformedArray.push(word + "way")
-    } else if (cons.includes(word.charAt(0))) {
+      console.log("First if statement: ", transformedArray);
+    } else if (sentence.includes(word.charAt(0))) {
       transformedArray.push(word.slice(1) + word.charAt(0) + "ay")
+      console.log("2",transformedArray);
     } else {
-      alert("nope")
+      alert("Nothing")
+      console.log("3", transformedArray);
     }
     });
     return transformedArray;
