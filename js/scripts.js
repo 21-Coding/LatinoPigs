@@ -26,7 +26,7 @@ function pig(sentence, vowel, cons) {
   sentence.forEach(function(word) {
     console.log("1.5", word);
       if(word.includes(word.charAt(0))){
-        transformedArray.push(word.slice(1) + "ay");
+        transformedArray.push(word.slice(1) + (word.charAt(0) + "ay"));
         console.log("2", sentence);
         console.log("3", word);
       }
